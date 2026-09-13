@@ -6,7 +6,9 @@
   --paper-dim: #ddd3bd;
   --marquee: #a63d2f;
   --line: rgba(27, 24, 21, 0.16);
-  --line-strong: rgba(27, 24, 21, 0.3);
+  --line-strong: rgba(27, 24, 21, 0.45);
+  --muted: #55504a;
+  --marquee-on-dark: #e2977f;
 }
 
 * { box-sizing: border-box; }
@@ -43,7 +45,7 @@ header.marquee .eyebrow {
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
-  color: var(--marquee);
+  color: var(--marquee-on-dark);
   margin: 0 0 14px;
 }
 
@@ -129,7 +131,7 @@ header.marquee p.dek {
 
 .session .pending {
   font-size: 14px;
-  color: rgba(27, 24, 21, 0.5);
+  color: var(--muted);
   font-style: italic;
 }
 
@@ -139,7 +141,7 @@ footer {
   border-top: 1px solid var(--line);
   padding: 32px 0 60px;
   font-size: 14px;
-  color: rgba(27, 24, 21, 0.6);
+  color: var(--muted);
 }
 
 footer a { border-bottom: 1px solid var(--line-strong); text-decoration: none; }
